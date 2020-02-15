@@ -27,15 +27,44 @@ export default class Login extends Component {
 
   render() {
     return (
-      <div className="login-wrapper">
-        <img src={twitterLogo} alt="Logo do Twitter" />
-        <form onSubmit={this.handleSubmit}>
-          <input
-            value={this.state.username}
-            onChange={this.handleInputChange}
-            placeholder="Nome de usuário" />
-          <button type="submit">Entrar</button>
-        </form>
+      <div className="limiter">
+        <div class="container-login100">
+          <div class="wrap-login100">
+
+            <div class="login100-pic js-tilt" data-tilt>
+              <img src="https://www.quixada.ufc.br/wp-content/uploads/2017/10/logo.png" alt="Logo do Twitter" />
+            </div>
+
+            <form onSubmit={this.handleSubmit} class="login100-form validate-form">
+              <span class="login100-form-title">
+                Fala que eu te escuto - UFCQXD
+					    </span>
+              <div class="wrap-input100 validate-input" data-validate="Email válido solicitado: a@bcd.xyz">
+                <input
+                  class="input100" type="text" name="email"
+                  value={this.state.username}
+                  onChange={this.handleInputChange}
+                  placeholder="Nome de usuário" />
+              </div>
+              <span class="focus-input100"></span>
+              <div class="container-login100-form-btn">
+                <button type="submit" class="login100-form-btn">Entrar</button>
+              </div>
+              <div class="text-center p-t-136">
+                <a class="txt2" href="#">
+                  Criar novo usuário
+							    <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                </a>
+              </div>
+
+
+
+            </form>
+
+          </div>
+
+        </div>
+
       </div>
     )
   }
