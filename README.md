@@ -4,6 +4,6 @@
 
 ![RockeSeat](https://rocketseat.com.br/static/images/week/logo.svg)
 
-Bibliotecas | Link | 
+Bibliotecas Utilizadas | Link | 
 :--------- | :------: 
 ReacJS | (https://pt-br.reactjs.org/)  
